@@ -1382,6 +1382,7 @@ agent tools.py
 agent.py tool-calling loop
 document_search tool using existing RAG retrieval
 web_search tool using OpenAI Responses API built-in web search
+current/external question guardrail that prefetches web_search evidence
 calculator tool
 /api/agent/chat endpoint
 agent trace output
