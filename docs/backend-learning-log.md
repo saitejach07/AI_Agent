@@ -1391,6 +1391,8 @@ frontend API updated to call /api/agent/chat
 frontend response types updated for answer + trace
 frontend trace rendering
 safe AST-based calculator
+production frontend API fallback to https://aiagentbe.vercel.app
+backend root route for Vercel status checks
 ```
 
 Legacy Project 1 pieces retained but not used by the active `/api/agent/chat` path:

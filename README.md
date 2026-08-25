@@ -236,10 +236,29 @@ If npm has cache permission issues, use:
 npm install --cache ./.npm-cache
 ```
 
+For local development, the frontend defaults to:
+
+```text
+http://127.0.0.1:8000
+```
+
+For production builds, the frontend defaults to the deployed backend:
+
+```text
+https://aiagentbe.vercel.app
+```
+
+You can override either behavior by setting:
+
+```bash
+VITE_API_BASE_URL=https://your-backend-url
+```
+
 ## API Endpoints
 
 | Method | Endpoint | Purpose |
 | --- | --- | --- |
+| GET | `/` | Backend service status and docs pointer |
 | GET | `/api/health` | Health check |
 | POST | `/api/documents/upload` | Upload and index PDF, TXT, or Markdown documents |
 | GET | `/api/documents` | List indexed documents |
